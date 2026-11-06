@@ -1,0 +1,23 @@
+# Voorbeeldkaarten. Vervang "tim" door de naam van jouw apparaat
+# (Instellingen → Apparaten → Connexxion <naam>). In een Engelstalige
+# Home Assistant eindigen de entiteiten op _schedule, _vehicle, enz.
+
+# 1. Planning: ingebouwde kalenderkaart
+type: calendar
+title: Connexxion planning
+initial_view: listWeek
+entities:
+  - calendar.connexxion_tim_planning
+
+---
+# 2. Waar is de taxi? Kaart, alleen zichtbaar tijdens een rit
+type: map
+title: Taxi onderweg
+entities:
+  - entity: device_tracker.connexxion_tim_voertuig
+  - entity: zone.home
+hours_to_show: 1
+visibility:
+  - condition: state
+    entity: binary_sensor.connexxion_tim_rit_venster
+    state: "on"

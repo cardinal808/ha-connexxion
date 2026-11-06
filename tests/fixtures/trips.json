@@ -1,0 +1,56 @@
+{
+  "trips": [
+    {
+      "tripId": 900,
+      "tripBusinessDay": "2026-11-11T00:00:00",
+      "pickupTime": "2026-11-11T14:00:00",
+      "deliveryTime": "2026-11-11T14:40:00",
+      "customerName": "Jansen, Tim",
+      "institutionLocationFrom": "BSO De Vlinder",
+      "customerLocationTo": "Thuis",
+      "tripStatus": "completed",
+      "tripStatusDisplayText": "Afgerond",
+      "tripRecStatus": "active"
+    },
+    {
+      "tripId": 1002,
+      "tripBusinessDay": "2026-11-13T00:00:00",
+      "pickupTime": "2026-11-13T14:10:00",
+      "deliveryTime": "2026-11-13T14:50:00",
+      "customerName": "Jansen, Tim",
+      "institutionLocationFrom": "BSO De Vlinder",
+      "customerLocationTo": "Thuis",
+      "locationFrom": {"street": "Schoolweg", "housenumber": "2", "place": "Ergens"},
+      "locationTo": {"street": "Dorpsstraat", "housenumber": "1", "place": "Ergens"},
+      "tripStatus": "planned",
+      "tripStatusDisplayText": "Gepland",
+      "tripRecStatus": "active"
+    },
+    {
+      "tripId": 1001,
+      "tripBusinessDay": "2026-11-12T00:00:00",
+      "pickupTime": "2026-11-12T14:05:00",
+      "deliveryTime": "2026-11-12T14:45:00",
+      "customerName": "Jansen, Tim",
+      "institutionLocationFrom": "BSO De Vlinder",
+      "customerLocationTo": "Thuis",
+      "locationFrom": {"street": "Schoolweg", "housenumber": "2", "place": "Ergens"},
+      "locationTo": {"street": "Dorpsstraat", "housenumber": "1", "place": "Ergens"},
+      "tripStatus": "planned",
+      "tripStatusDisplayText": "Gepland",
+      "tripRecStatus": "active"
+    },
+    {
+      "tripId": 1003,
+      "tripBusinessDay": "2026-11-16T00:00:00",
+      "pickupTime": "2026-11-16T14:05:00",
+      "deliveryTime": "2026-11-16T14:45:00",
+      "customerName": "Jansen, Tim",
+      "institutionLocationFrom": "BSO De Vlinder",
+      "customerLocationTo": "Thuis",
+      "tripStatus": "cancel",
+      "tripStatusDisplayText": "Geannuleerd",
+      "tripRecStatus": "active"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexxion Groepsvervoer",
+        "description": "Log in with your Connexxion Groepsvervoer parent portal account.",
+        "data": {
+          "username": "E-mail address",
+          "password": "Password"
+        },
+        "data_description": {
+          "username": "E-mail address you use for the Connexxion Groepsvervoer parent portal",
+          "password": "Password for the parent portal"
+        }
+      },
+      "traveler": {
+        "title": "Choose a traveller",
+        "description": "This account has several travellers. Add the integration again for each extra traveller.",
+        "data": {
+          "customer_id": "Traveller"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Log in again",
+        "description": "The Connexxion login no longer works. Enter your current details.",
+        "data": {
+          "username": "E-mail address",
+          "password": "Password"
+        },
+        "data_description": {
+          "username": "E-mail address you use for the Connexxion Groepsvervoer parent portal",
+          "password": "Password for the parent portal"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Login failed. Check your e-mail address and password.",
+      "cannot_connect": "Could not reach Connexxion.",
+      "no_travelers": "No traveller is linked to this account.",
+      "unknown": "Unexpected error, see the log."
+    },
+    "abort": {
+      "already_configured": "This traveller is already set up.",
+      "reauth_successful": "Login updated."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "pickup": {
+        "name": "Pickup"
+      },
+      "arrival": {
+        "name": "Arrival"
+      },
+      "rides": {
+        "name": "Rides"
+      }
+    },
+    "binary_sensor": {
+      "ride_window": {
+        "name": "Ride window"
+      }
+    },
+    "calendar": {
+      "schedule": {
+        "name": "Schedule"
+      }
+    },
+    "device_tracker": {
+      "vehicle": {
+        "name": "Vehicle"
+      }
+    }
+  },
+  "exceptions": {
+    "auth_failed": {
+      "message": "Connexxion login failed."
+    },
+    "update_failed": {
+      "message": "Could not update the Connexxion schedule: {error}"
+    }
+  }
+}

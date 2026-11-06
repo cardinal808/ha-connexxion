@@ -1,0 +1,18 @@
+{
+  "domain": "connexxion_groepsvervoer",
+  "name": "Connexxion Groepsvervoer",
+  "categories": [
+    "vehicles_transport.public_transport",
+    "local_services"
+  ],
+  "codeowners": [
+    "@cardinal808"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/cardinal808/ha-connexxion",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/cardinal808/ha-connexxion/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

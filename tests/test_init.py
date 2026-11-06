@@ -5,6 +5,7 @@ from unittest.mock import patch
 from freezegun.api import FrozenDateTimeFactory
 from homeassistant.config_entries import SOURCE_REAUTH, ConfigEntryState
 from homeassistant.core import HomeAssistant
+from homeassistant.helpers import entity_registry as er
 from pytest_homeassistant_custom_component.common import async_fire_time_changed
 
 from custom_components.connexxion_groepsvervoer.api import (
@@ -49,6 +50,8 @@ async def test_entities_during_ride(
     vehicle = hass.states.get(f"device_tracker.{P}_vehicle")
     assert vehicle.attributes["latitude"] == 52.1
     assert vehicle.attributes["license_plate"] == "AB-123-C"
+    entity = er.async_get(hass).async_get(f"device_tracker.{P}_vehicle")
+    assert entity.entity_category is None
 
     cal = hass.states.get(f"calendar.{P}_schedule")
     assert cal.attributes["message"] == "Taxi naar huis (Gepland)"

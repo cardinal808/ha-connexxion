@@ -29,6 +29,8 @@ class ConnexxionVehicleTracker(ConnexxionEntity, TrackerEntity):
 
     _attr_icon = "mdi:bus-school"
     _attr_source_type = SourceType.GPS
+    # Trackers default to "diagnostic"; this one belongs on the dashboard.
+    _attr_entity_category = None
 
     def __init__(self, coordinator: ConnexxionCoordinator) -> None:
         super().__init__(coordinator, "vehicle")
